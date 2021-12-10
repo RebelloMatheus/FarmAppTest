@@ -11,15 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Testes", "4 - Testes", "{845DD2D3-C11D-426A-9DB8-206FA8AE91B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Infra.BancoDeDados", "FarmApp.Infra.BancoDeDados\FarmApp.Infra.BancoDeDados.csproj", "{45C625C8-5219-4E6D-BA17-BE73D15AF06D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmApp.Infra.BancoDeDados", "FarmApp.Infra.BancoDeDados\FarmApp.Infra.BancoDeDados.csproj", "{45C625C8-5219-4E6D-BA17-BE73D15AF06D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Dominio", "FarmApp.Dominio\FarmApp.Dominio.csproj", "{F06292A5-34D4-43A1-B0D2-5E1D23B7A6E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmApp.Dominio", "FarmApp.Dominio\FarmApp.Dominio.csproj", "{F06292A5-34D4-43A1-B0D2-5E1D23B7A6E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Testes.Test", "FarmApp.Testes.Test\FarmApp.Testes.Test.csproj", "{74D92BAB-F5D2-44EB-8202-1CF9659C3393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmApp.Testes.Test", "FarmApp.Testes.Test\FarmApp.Testes.Test.csproj", "{74D92BAB-F5D2-44EB-8202-1CF9659C3393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Dominio.Servico", "FarmApp.Dominio.Servico\FarmApp.Dominio.Servico.csproj", "{5C22588A-6BD6-4580-BF82-E3389CF070A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmApp.Dominio.Servico", "FarmApp.Dominio.Servico\FarmApp.Dominio.Servico.csproj", "{5C22588A-6BD6-4580-BF82-E3389CF070A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Dominio.Mediator", "FarmApp.Dominio.Mediator\FarmApp.Dominio.Mediator.csproj", "{2433C0C5-0D9B-4F60-8830-C47AB31BC854}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FarmApp.Dominio.Mediator", "FarmApp.Dominio.Mediator\FarmApp.Dominio.Mediator.csproj", "{2433C0C5-0D9B-4F60-8830-C47AB31BC854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmApp.Aplicacao.WebApi", "FarmApp.Aplicacao.WebApi\FarmApp.Aplicacao.WebApi.csproj", "{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{2433C0C5-0D9B-4F60-8830-C47AB31BC854}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2433C0C5-0D9B-4F60-8830-C47AB31BC854}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2433C0C5-0D9B-4F60-8830-C47AB31BC854}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{74D92BAB-F5D2-44EB-8202-1CF9659C3393} = {845DD2D3-C11D-426A-9DB8-206FA8AE91B1}
 		{5C22588A-6BD6-4580-BF82-E3389CF070A6} = {4C3EB87C-3EAC-4F61-8CD2-1444F8624D94}
 		{2433C0C5-0D9B-4F60-8830-C47AB31BC854} = {4C3EB87C-3EAC-4F61-8CD2-1444F8624D94}
+		{56393A27-E1CF-4D3E-ADF9-D929C8D23CE0} = {DCDF7054-EEEB-4F8B-A091-6543F976BBC1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F933C76B-99CC-4C5E-95E6-852E932F7A46}

@@ -10,6 +10,8 @@
   </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Bogus" Version="34.0.1" />
+        <PackageReference Include="CountryData.Bogus" Version="3.65.0" />
         <PackageReference Include="FluentAssertions" Version="5.10.3" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.9" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.9" />
@@ -21,12 +23,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FarmApp.Dominio.Servico\FarmApp.Dominio.Servico.csproj" />
+      <ProjectReference Include="..\FarmApp.Aplicacao.WebApi\FarmApp.Aplicacao.WebApi.csproj" />
       <ProjectReference Include="..\FarmApp.Infra.BancoDeDados\FarmApp.Infra.BancoDeDados.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Unitario\" />
     </ItemGroup>
 
     <ItemGroup>

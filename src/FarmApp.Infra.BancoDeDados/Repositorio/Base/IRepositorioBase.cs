@@ -21,7 +21,7 @@ namespace FarmApp.Infra.BancoDeDados.Repositorio.Base
         Task<IList<TEntidadeBase>> ObterTodosAsync<TEntidadeBase>(Expression<Func<TEntidadeBase, bool>> condicao)
             where TEntidadeBase : EntidadeBase<TChavePrimaria>;
 
-        Task<TEntidadeBase> PrimeiroOuDefaultAsync<TEntidadeBase>(Expression<Func<TEntidadeBase, bool>> condicao)
+        Task<TEntidadeBase> PrimeiroOuPadraoAsync<TEntidadeBase>(Expression<Func<TEntidadeBase, bool>> condicao)
             where TEntidadeBase : EntidadeBase<TChavePrimaria>;
 
         Task AdicionarAsync<TEntidadeBase>(TEntidadeBase entidade)
@@ -39,7 +39,7 @@ namespace FarmApp.Infra.BancoDeDados.Repositorio.Base
         Task<int> ContarTodosAsync<TEntidadeBase>()
             where TEntidadeBase : EntidadeBase<TChavePrimaria>;
 
-        Task<int> ObterQuandoAsync<TEntidadeBase>(Expression<Func<TEntidadeBase, bool>> predicate)
+        Task<int> ContarAsync<TEntidadeBase>(Expression<Func<TEntidadeBase, bool>> predicate)
             where TEntidadeBase : EntidadeBase<TChavePrimaria>;
     }
 

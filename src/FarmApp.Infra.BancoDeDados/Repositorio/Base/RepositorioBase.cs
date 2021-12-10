@@ -32,7 +32,7 @@ namespace FarmApp.Infra.BancoDeDados.Repositorio.Base
         public async Task<int> ContarTodosAsync<TEntidadeTipo>() where TEntidadeTipo : EntidadeBase<TChavePrimaria>
             => await contexto.Set<TEntidadeTipo>().CountAsync();
 
-        public async Task<TEntidadeTipo> PrimeiroOuDefaultAsync<TEntidadeTipo>(Expression<Func<TEntidadeTipo, bool>> condicao) where TEntidadeTipo : EntidadeBase<TChavePrimaria>
+        public async Task<TEntidadeTipo> PrimeiroOuPadraoAsync<TEntidadeTipo>(Expression<Func<TEntidadeTipo, bool>> condicao) where TEntidadeTipo : EntidadeBase<TChavePrimaria>
             => await contexto.Set<TEntidadeTipo>().FirstOrDefaultAsync(condicao);
 
         public async Task<IList<TEntidadeTipo>> ObterTodosAsync<TEntidadeTipo>() where TEntidadeTipo : EntidadeBase<TChavePrimaria>
@@ -61,7 +61,7 @@ namespace FarmApp.Infra.BancoDeDados.Repositorio.Base
             }
         }
 
-        public async Task<int> ObterQuandoAsync<TEntidadeTipo>(Expression<Func<TEntidadeTipo, bool>> predicate) where TEntidadeTipo : EntidadeBase<TChavePrimaria>
+        public async Task<int> ContarAsync<TEntidadeTipo>(Expression<Func<TEntidadeTipo, bool>> predicate) where TEntidadeTipo : EntidadeBase<TChavePrimaria>
             => await contexto.Set<TEntidadeTipo>().CountAsync(predicate);
 
         public async Task AtualizarAsync<TEntidadeTipo>(TEntidadeTipo entidade) where TEntidadeTipo : EntidadeBase<TChavePrimaria>

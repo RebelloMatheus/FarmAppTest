@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using FarmApp.Dominio.Mediator.Mediators.Handlers.Comandos;
+using MediatR;
+using Microsoft.Extensions.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -6,7 +8,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void AdicionarRequisicoes(this IServiceCollection servicos, IConfiguration configuracao)
         {
-            //servicos.AddMediatR(typeof(T).Assembly);
+            servicos.AddMediatR(typeof(UsuarioAdicionarHandler).Assembly);
             servicos.AdicionarServicoFarmApp(configuracao);
         }
     }
