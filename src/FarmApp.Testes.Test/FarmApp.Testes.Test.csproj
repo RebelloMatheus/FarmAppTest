@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+      <Description>Este é um teste aplicado para uma vaga de desenvolvedor</Description>
+      <Authors>Matheus Rebello</Authors>
+      <Copyright>Matheus Rebello</Copyright>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="34.0.1" />
+        <PackageReference Include="CountryData.Bogus" Version="3.65.0" />
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.9" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.9" />
+        <PackageReference Include="Moq" Version="4.14.7" />
+        <PackageReference Include="NSubstitute" Version="4.2.2" />
+        <PackageReference Include="NUnit" Version="3.13.2" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FarmApp.Aplicacao.WebApi\FarmApp.Aplicacao.WebApi.csproj" />
+      <ProjectReference Include="..\FarmApp.Infra.BancoDeDados\FarmApp.Infra.BancoDeDados.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.test.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
